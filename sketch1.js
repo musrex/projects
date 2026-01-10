@@ -25,6 +25,7 @@ class Walker {
   }
 
   step() {
+    noiseDetail(8, .75);
     this.x += map(noise(this.xoff), 0, 1, -1, 1);
     this.y += map(noise(this.yoff), 0, 1, -1, 1);
 
